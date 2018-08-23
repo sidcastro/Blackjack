@@ -20,7 +20,7 @@ describe Deck do
       finish_size = start_size - 1
 
       deck.deal
-      
+
       expect(deck.cards.size).to eq finish_size
     end
 
