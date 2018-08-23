@@ -1,13 +1,13 @@
 class Card
-  attr_reader :value, :suit
+  attr_reader :rank, :suit
 
-  def initialize(value, suit)
-    @value = value
+  def initialize(rank, suit)
+    @rank = rank
     @suit = suit
   end
 
   def to_s
-    "#{@value}#{@suit}"
+    "#{@rank}#{@suit}"
   end
 
   def score
@@ -16,15 +16,15 @@ class Card
     elsif face_card?
       return 10
     else
-      return @value
+      return @rank
     end
   end
 
   def ace?
-    @value == "A"
+    @rank == "A"
   end
 
   def face_card?
-    ["J", "Q", "K"].include?(@value)
+    ["J", "Q", "K"].include?(@rank)
   end
 end

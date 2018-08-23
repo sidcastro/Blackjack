@@ -26,7 +26,7 @@ RSpec.describe Card do
           end
         end
       end
-      
+
       describe "#face_card" do
         it "determines if a card is a face card" do
           expect(face_card.face_card?). to eq true
