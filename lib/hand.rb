@@ -1,3 +1,5 @@
+require_relative "deck"
+
 class Hand
   attr_reader :name
 
@@ -12,7 +14,7 @@ class Hand
 
   def to_s
     cards = @cards.map { |card| card.to_s }.join(", ")
-    "#{@name} has cards: #{cards}.\nCurrent Score: #{score}\n\n"
+    "#{@name} is dealt cards: #{cards}\nCurrent Score: #{score}\n\n"
   end
 
   def bust?

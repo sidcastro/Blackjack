@@ -74,7 +74,7 @@ elsif dealer.score > player.score
   puts "#{dealer.name} wins!"
 elsif dealer.score == player.score
   sleep(1.5)
-  puts "Score tied #{dealer.score}:#{player.score}!"
+  puts "Score tied!"
 else
   sleep(1.5)
   puts "#{player.name} wins!"
